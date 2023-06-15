@@ -1,0 +1,215 @@
+:root {
+    --main-color: #3FA4EC;
+    --second-color: #31353F;
+    --main-bg: #404040;
+}
+/* --------------------------------------- */
+
+body {
+    font-family: 'Cairo', sans-serif;
+    margin: 0;
+    padding: 0;
+        background-color: #EBF5FB;
+    background-image: url(../imgs/pro.png);
+}
+/* --------------------------------------- */
+
+/* Start container in media */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 993px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1470px;
+    }
+}
+/* End container in media */
+/* --------------------------------------- */
+
+.app {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ----------- */
+
+.container .row {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+/* Large */
+@media (max-width: 1200px) {
+    .app {
+        height: fit-content;
+    }
+    .container .row {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.row .col:first-child {
+    padding: 15px 10px;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+@media (max-width: 1200px) {
+    .row .col {
+        height: 100vh;
+    }
+}
+.row .col:first-child .logo img {
+    max-width: 100%;
+}
+
+.row .col:first-child .text h2 {
+    font-size: 48px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.row .col:first-child .text p {
+    font-size: 22px;
+    margin: 0;
+}
+.row .col:first-child .text p > span {
+    color: var(--main-color);
+}
+.row .col:first-child .links {
+    height: fit-content;
+    display: flex;
+    gap: 40px;
+}
+.row .col:first-child .links > div {
+    margin: 40px 0 0 0;
+    height: fit-content;
+}
+.row .col:first-child .links > div a {
+    width: 130px;
+    height: 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    gap: 10px;
+    background-color: var(--main-bg);
+    color: white;
+
+}
+/* Small */
+@media (max-width: 768px) {
+    .row .col:first-child .links {
+        gap: 20px;
+    }
+    .row .col:first-child .links > div a {
+        width: 120px;
+    }
+}
+.row .col:first-child .links > div .name {
+    margin: 0;
+    margin-top: -28px;
+    text-align: left;
+}
+.row .col:first-child .links > div .name span {
+    font-size: 8px;
+    margin: 0;
+}
+.row .col:first-child .links > div .name h3 {
+    font-size: 14px;
+    margin: 0;
+    margin-top: -10px;
+}
+.row .col:first-child .links > div .icon img {
+    height: 35px;
+}   
+.row .col:first-child .links > div .icon i {
+    font-size: 26px;
+}
+/* ------------------------------- */
+.row .col:last-child {
+    flex: 1;
+    position: relative;
+}
+.row .col:last-child {
+    max-width: 100%;
+    overflow: hidden;
+}
+.row .col:last-child img {
+    max-width: 149%;
+    margin-top: 0%;
+    margin-right: -37%;
+}
+
+.row .col:last-child .sir {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.18;
+}
+.row .col:last-child .sir:first-of-type {
+    height: 12px;
+    width: 12px;
+    border: 7px solid var(--main-color);
+    left: 90px;
+    top: 100px;
+}
+.row .col:last-child .sir:nth-last-of-type(2) {
+    height: 30px;
+    width: 30px;
+    border: 3px solid var(--main-color);
+    right: 450px;
+    top: 180px;
+}
+.row .col:last-child .sir:nth-last-of-type(3) {
+    height: 30px;
+    width: 30px;
+    background-color: var(--main-color);
+    right: 180px;
+    bottom: 500px;
+}
+.row .col:last-child .sir:nth-last-of-type(4) {
+    height: 12px;
+    width: 12px;
+    border: 3px solid var(--main-color);
+    right: 180px;
+    bottom: 400px;
+}
+.row .col:last-child .sir:nth-last-of-type(5) {
+    height: 12px;
+    width: 12px;
+    border: 7px solid var(--main-color);
+    right: 500px;
+    bottom: 100px;
+}
+.row .col:last-child .sir:last-of-type {
+    height: 50px;
+    width: 50px;
+    background-color: var(--main-color);
+    left: 30px;
+    bottom: 50px;
+}
